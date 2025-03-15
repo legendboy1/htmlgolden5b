@@ -27,7 +27,6 @@ const browserPasteSolution = typeof navigator.clipboard.readText === "function";
 const browserCopySolution = typeof navigator.clipboard.write === "function";
 let copyButton = 0; // Hack to make copying work on Safari.
 const isMobile = isTouchDevice();
-console.log("woag");
 
 // offscreen canvases
 let osc1, osctx1;
@@ -6898,6 +6897,7 @@ function truncateLevelTitles(arr, offset) {
 }
 
 function drawExploreLevel(x, y, i, levelType, pageType) {
+	console.log("woag");
 	// page types:
 	// 0 - main explore page
 	// 1 - explore user page
