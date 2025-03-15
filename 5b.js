@@ -27,6 +27,7 @@ const browserPasteSolution = typeof navigator.clipboard.readText === "function";
 const browserCopySolution = typeof navigator.clipboard.write === "function";
 let copyButton = 0; // Hack to make copying work on Safari.
 const isMobile = isTouchDevice();
+console.log("woag");
 
 // offscreen canvases
 let osc1, osctx1;
